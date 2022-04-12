@@ -91,11 +91,11 @@ public:
 
     void print(void) {
         char buff[256];
-        sprintf(buff, "%s %s, %u лет, билет №: %s", info->name, info->age, info->ID);
+        sprintf(buff, "%s %s, %u лет, студенческий №: %s", info->name, info->age, info->ID);
         cout << buff << endl;
         for (list<Mark*>::iterator it = listSubjMark.begin(); it != listSubjMark.end(); ++it)
         {
-            sprintf(buff, "Предмет: %s; Средняя оценка: %.1f", (*it)->subj, (*it)->averMark);
+            sprintf(buff, "предмет: %s; средняя оценка: %.1f", (*it)->subj, (*it)->averMark);
             cout << buff << endl;
         }
 
