@@ -1,0 +1,16 @@
+void Pine(int height) {
+    for (int i = 0; i<height; i++) {
+        for( int j = 0; j < height - 1 - i; j++){
+            std::cout << ‘ ‘;
+        }
+        for (int k = 0; k < (2*i + 1); k++) {
+            std::cout<< '*';
+        }
+        std::cout << '\n';
+     }
+}
+
+int main(){
+    pine(3); // любое число - высота елочки
+    return 0;
+}
